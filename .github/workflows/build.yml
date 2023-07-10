@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -31,10 +31,3 @@ jobs:
       with:
         name: dist
         path: dist/
-    - name: Push update to now-subconverter
-      if: ${{ github.ref == 'refs/heads/master' }}
-      uses: zzzze/webhook-trigger@master
-      with:
-        data: '{"ref":"master"}'
-        webhook_url: 'https://api.github.com/repos/Dashaguo/now-subconverter/actions/workflows/sub-web.yml/dispatches'
-        options: '-H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.REPO_TOKEN }}"'
