@@ -426,20 +426,20 @@ export default {
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
           "api.opi.lol（自用）": "https://api.opi.lol/sub?",
+          "api.v1.mk（支持Vless+Hysteria）": "https://api.v1.mk/sub?",
           "subcon.dlj.tf (subconverter作者后端)": "https://subcon.dlj.tf/sub?",
           "api.wcc.best (sub-web作者后端)": "https://api.wcc.best/sub?",
           "api.dler.io（lhie1后端）": "https://api.dler.io/sub?",
           "sub.id9.cc (品云☁️后端)": "https://sub.id9.cc/sub?",
-          "api.sublink.dev（普拉斯公益后端）": "https://api.sublink.dev/sub?",
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
           { value: "https://api.opi.lol/sub?" },
+          { value: "https://api.v1.mk/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.wcc.best/sub?" },
           { value: "https://api.dler.io/sub?" },
           { value: "https://sub.id9.cc/sub?" },
-          { value: "https://api.sublink.dev/sub?" },
         ],
         remoteConfig: [
           {
