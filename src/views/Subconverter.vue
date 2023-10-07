@@ -417,15 +417,15 @@ export default {
           自动判断客户端: "auto",
         },
         shortTypes: {
-          "opi.lol": "https://opi.lol/short",
           "suo.yt": "https://suo.yt/short",
           "v1.mk": "https://v1.mk/short",
+          "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
-          "api.opi.lol（自用）": "https://api.opi.lol/sub?",
+          "sub-store.usuc.cc（CTC官方，支持Vless+Hysteria）": "https://sub-store.usuc.cc/sub?",
           "api.v1.mk（肥羊后端，支持Vless+Hysteria）": "https://api.v1.mk/sub?",
           "sub.d1.mk（肥羊备用后端，支持Vless+Hysteria）": "https://api.d1.mk/sub?",
           "subcon.xeton.dev (subconverter作者后端)": "https://subcon.xeton.dev/sub?",
@@ -435,7 +435,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://api.opi.lol/sub?" },
+          { value: "https://sub-store.usuc.cc/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://sub.d1.mk/sub?" },
           { value: "https://subcon.xeton.dev/sub?" },
@@ -568,8 +568,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://api.opi.lol/sub?",
-        shortType: "https://opi.lol/short",
+        customBackend: "https://sub-store.usuc.cc/sub?",
+        shortType: "https://suo.yt/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
         excludeRemarks: "",
