@@ -425,7 +425,7 @@ export default {
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
-          "sub-store.usuc.cc（CTC官方，支持Vless+Hysteria）": "https://sub-store.usuc.cc/sub?",
+          "suc-store.usuc.cc（CTC官方，支持Vless+Hysteria）": "https://suc-store.usuc.cc/sub?",
           "api.v1.mk（肥羊后端，支持Vless+Hysteria）": "https://api.v1.mk/sub?",
           "sub.d1.mk（肥羊备用后端，支持Vless+Hysteria）": "https://api.d1.mk/sub?",
           "subcon.xeton.dev (subconverter作者后端)": "https://subcon.xeton.dev/sub?",
@@ -435,7 +435,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://sub-store.usuc.cc/sub?" },
+          { value: "https://suc-store.usuc.cc/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://sub.d1.mk/sub?" },
           { value: "https://subcon.xeton.dev/sub?" },
@@ -568,7 +568,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://sub-store.usuc.cc/sub?",
+        customBackend: "https://suc-store.usuc.cc/sub?",
         shortType: "https://suo.yt/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
