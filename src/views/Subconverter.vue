@@ -425,6 +425,7 @@ export default {
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
+          "sub.reirei.link（CF Workers防偷订阅后端）": "https://sub.reirei.link/sub?",
           "suc-store.usuc.cc（CTC官方，支持Vless+Hysteria）": "https://suc-store.usuc.cc/sub?",
           "api.v1.mk（肥羊后端，支持Vless+Hysteria）": "https://api.v1.mk/sub?",
           "sub.d1.mk（肥羊备用后端，支持Vless+Hysteria）": "https://api.d1.mk/sub?",
@@ -435,6 +436,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
+          { value: "https://sub.reirei.link/sub?" },
           { value: "https://suc-store.usuc.cc/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://sub.d1.mk/sub?" },
@@ -568,7 +570,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://suc-store.usuc.cc/sub?",
+        customBackend: "https://sub.reirei.link/sub?",
         shortType: "https://suo.yt/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
