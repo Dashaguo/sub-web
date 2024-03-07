@@ -174,6 +174,12 @@
                                 ></el-checkbox>
                               </el-row>
                               <el-row>
+                                <el-col>
+                                    <el-checkbox v-model="form.tpl.singbox.ipv6" label="Sing-Box支持IPV6"></el-checkbox>
+                                  </div>
+                                </el-col>
+                              </el-row>
+                              <el-row>
                                 <el-checkbox
                                   v-model="form.udp"
                                   label="UDP"
@@ -398,7 +404,8 @@ export default {
       options: {
         clientTypes: {
           Clash: "clash",
-          ClashR: "clashr",
+          "Sing-Box": "singbox",
+          V2Ray: "v2ray",
           Surge2: "surge&ver=2",
           Surge3: "surge&ver=3",
           Surge4: "surge&ver=4",
@@ -411,7 +418,7 @@ export default {
           "Shadowsocks Android(SIP008)": "sssub",
           ShadowsocksR: "ssr",
           ShadowsocksD: "ssd",
-          V2Ray: "v2ray",
+          ClashR: "clashr",
           Trojan: "trojan",
           "混合订阅（mixed）": "mixed",
           自动判断客户端: "auto",
@@ -425,8 +432,7 @@ export default {
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
-          "sub.reirei.link（CF Workers防偷订阅后端）": "https://sub.reirei.link/sub?",
-          "suc-store.usuc.cc（CTC官方，支持Vless+Hysteria）": "https://suc-store.usuc.cc/sub?",
+          "sub.opi.lol（自用后端）": "https://sub.opi.lol/sub?",
           "api.v1.mk（肥羊后端，支持Vless+Hysteria）": "https://api.v1.mk/sub?",
           "sub.d1.mk（肥羊备用后端，支持Vless+Hysteria）": "https://api.d1.mk/sub?",
           "subcon.xeton.dev (subconverter作者后端)": "https://subcon.xeton.dev/sub?",
@@ -436,8 +442,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://sub.reirei.link/sub?" },
-          { value: "https://suc-store.usuc.cc/sub?" },
+          { value: "https://sub.opi.lol/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://sub.d1.mk/sub?" },
           { value: "https://subcon.xeton.dev/sub?" },
@@ -570,7 +575,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://sub.reirei.link/sub?",
+        customBackend: "https://sub.opi.lol/sub?",
         shortType: "https://suo.yt/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
@@ -592,6 +597,9 @@ export default {
 
         // tpl 定制功能
         tpl: {
+          singbox: {
+            ipv6: true
+          },
           surge: {
             doh: false, // dns 查询是否使用 DoH
           },
@@ -756,6 +764,11 @@ export default {
         if (this.form.tpl.surge.doh === true) {
           this.customSubUrl += "&surge.doh=true";
         }
+
+        if (this.form.clientType === "singbox") {
+          if (this.form.tpl.singbox.ipv6 === true) {
+            this.customSubUrl += "&singbox.ipv6=1";
+          }
 
         if (this.form.clientType === "clash") {
           if (this.form.tpl.clash.doh === true) {
