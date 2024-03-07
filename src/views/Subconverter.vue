@@ -424,6 +424,7 @@ export default {
           自动判断客户端: "auto",
         },
         shortTypes: {
+          "jsj.lol": "https://jsj.lol/short",
           "suo.yt": "https://suo.yt/short",
           "v1.mk": "https://v1.mk/short",
           "d1.mk": "https://d1.mk/short",
@@ -576,7 +577,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "https://sub.opi.lol/sub?",
-        shortType: "https://suo.yt/short",
+        shortType: "https://jsj.lol/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
         excludeRemarks: "",
