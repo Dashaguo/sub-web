@@ -174,10 +174,10 @@
                                 ></el-checkbox>
                               </el-row>
                               <el-row>
-                                <el-col>
-                                    <el-checkbox v-model="form.tpl.singbox.ipv6" label="Sing-Box支持IPV6"></el-checkbox>
-                                  </div>
-                                </el-col>
+                                <el-checkbox
+                                  v-model="form.tpl.singbox.ipv6"
+                                  label="Sing-Box IPV6"
+                                ></el-checkbox>
                               </el-row>
                               <el-row>
                                 <el-checkbox
@@ -770,7 +770,7 @@ export default {
             this.customSubUrl += "&singbox.ipv6=1";
           }
         }
-        
+
         if (this.form.clientType === "clash") {
           if (this.form.tpl.clash.doh === true) {
             this.customSubUrl += "&clash.doh=true";
