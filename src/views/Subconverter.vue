@@ -769,7 +769,8 @@ export default {
           if (this.form.tpl.singbox.ipv6 === true) {
             this.customSubUrl += "&singbox.ipv6=1";
           }
-
+        }
+        
         if (this.form.clientType === "clash") {
           if (this.form.tpl.clash.doh === true) {
             this.customSubUrl += "&clash.doh=true";
