@@ -433,7 +433,7 @@ export default {
         },
         customBackend: {
           "localhost:25500": "http://localhost:25500/sub?",
-          "sub.jsj.lol（自用后端）": "https://sub.jsj.lol/sub?",
+          "sub.8ti.de（自用后端）": "https://sub.8ti.de/sub?",
           "api.v1.mk（肥羊后端，支持Vless+Hysteria）": "https://api.v1.mk/sub?",
           "sub.d1.mk（肥羊备用后端，支持Vless+Hysteria）": "https://api.d1.mk/sub?",
           "subcon.xeton.dev (subconverter作者后端)": "https://subcon.xeton.dev/sub?",
@@ -443,7 +443,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
-          { value: "https://sub.jsj.lol/sub?" },
+          { value: "https://sub.8ti.de/sub?" },
           { value: "https://api.v1.mk/sub?" },
           { value: "https://sub.d1.mk/sub?" },
           { value: "https://subcon.xeton.dev/sub?" },
@@ -576,7 +576,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://sub.jsj.lol/sub?",
+        customBackend: "https://sub.8ti.de/sub?",
         shortType: "https://jsj.lol/short",
         remoteConfig:
           "https://raw.githubusercontent.com/Dashaguo/My-rules/main/My-rules%202.ini",
